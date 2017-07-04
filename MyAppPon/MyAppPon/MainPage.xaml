@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyAppPon"
+             x:Class="MyAppPon.MainPage">
+    <StackLayout Padding="10,10,10,10" Spacing="10">
+        <Label Text="Username:"/>
+        <Entry x:Name="entryUsername"/>
+        
+        <Label Text="Password:" />
+        <Entry x:Name="entryPassword" IsPassword="True"/>
+        
+        <Label Text="Email:" />
+        <Entry x:Name="entryEmail" Keyboard="Email"/>
+
+        <Label Text="Phone:" />
+        <Entry x:Name="entryPhone" Keyboard="Telephone"/>
+
+        <Button Text="Sign Up" Clicked="Button_Clicked"/>
+        
+        <Label x:Name="labelUserInfo"/>
+    </StackLayout>
+</ContentPage>
